@@ -1,0 +1,109 @@
+.header {
+    background: #f9f9f9;
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+.header .inner .gnb {
+    margin-left: auto;
+}
+
+.header .inner .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+.header .inner .gnb>ul>li>a {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main_content {
+    padding: 120px 0;
+}
+
+.main_content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.main_content>p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main_content .inner {
+    display: flex;
+}
+
+.main_content .inner .itm {
+    flex: 1;
+    text-align: center;
+}
+
+.main_content .inner .itm strong {
+    position: relative;
+    display: block;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+}
+
+.main_content .inner .itm strong::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    width: 2px;
+    height: 40px;
+    background: #008850;
+    transform: translate(-50%, -50%);
+}
+
+.main_content .inner .itm p {
+    margin-top: 16px;
+    font-style: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.main_content .inner .itm a {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 24px;
+    border: 1px solid #008850;
+    font-size: 14px;
+    color: #008850;
+}
+
+.main_content .inner .itm a::after {
+    content: "";
+    display: inline-block;
+    margin-left: 8px;
+    width: 5px;
+    height: 10px;
+    background: url(../images/arrow_28.png) no-repeat center center;
+}
+
+.main_content .inner .itm .img_box {
+    overflow: hidden;
+}
+
+.main_content .inner .itm img {
+    transition: 0.4s;
+}
+
+.main_content .inner .itm:hover img {
+    transform: scale(1.1);
+}
